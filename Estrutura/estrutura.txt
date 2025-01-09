@@ -1,0 +1,33 @@
+para rodar faça o seguinte  .\run.py no cmd
+
+
+
+
+git clone --progress https://github.com/projetospyton2025/CombinacoesMegaSena.git "H:\Meu Drive\ProjetosPython\megaSenaCombinacao"
+
+
+megaSenaCombinacao/
+│
+├── run.py
+├── requirements.txt
+├── app/
+│   ├── __init__.py   (arquivo vazio)
+│   ├── interface.py
+│   └── combinacoes.py
+
+
+
+New-Item -ItemType Directory -Path "megaSenaCombinacao"
+
+
+# Defina a pasta base onde os arquivos serão criados
+$basePath = "H:\Meu Drive\ProjetosPython\megaSenaCombinacao"
+
+
+# Crie os arquivos e diretórios
+New-Item -ItemType File -Path "$basePath\run.py"
+New-Item -ItemType File -Path "$basePath\requirements.txt"
+New-Item -ItemType Directory -Path "$basePath\app"
+New-Item -ItemType File -Path "$basePath\app\__init__.py"
+New-Item -ItemType File -Path "$basePath\app\interface.py"
+New-Item -ItemType File -Path "$basePath\app\combinacoes.py"
